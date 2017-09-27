@@ -8,3 +8,6 @@ RUN cd /usr/local/bin; curl https://storage.googleapis.com/pub/gsutil.tar.gz| ta
 
 COPY backup.sh /usr/local/bin/
 COPY customize_backup.sh /backup/backup.sh
+
+COPY restore.sh /usr/local/bin/
+COPY customize_restore.sh /backup/restore.sh
