@@ -13,7 +13,7 @@ garbd \
   --address gcomm://$CLUSTER_JOIN \
   --group   $CLUSTER_NAME         \
   --donor   $CLUSTER_NODE         \
-  --sst     xtrabackup:$(hostname --ip-address)
+  --sst     mysqldump_nc:$(hostname --ip-address)
 
 echo -n "Receiving data..."
 wait $NC_PID
