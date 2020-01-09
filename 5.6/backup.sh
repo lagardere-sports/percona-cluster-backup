@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 BACKUP_TARGET=/tmp/${BACKUP_NAME:=backup}.tar
 
