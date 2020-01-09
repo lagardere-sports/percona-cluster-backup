@@ -1,4 +1,6 @@
 #!/bin/bash
+set -x
+
 if [ -f /backup/before-restore.sh ]; then source /backup/before-restore.sh; fi
 
 echo -n "Restore backup..."
